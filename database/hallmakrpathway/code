@@ -1,0 +1,7 @@
+while read NAME;do cat $NAME.txt ../geneset1|sort |uniq -d |xargs -n100|sed 's/ /,/g'; done <name
+while read NAME;do cat $NAME.txt ../geneset2|sort |uniq -d |xargs -n100|sed 's/ /,/g'; done <name
+while read NAME;do cat $NAME.txt ../geneset2|sort |uniq -d |wc -l; done <name
+
+while read NAME;do cat $NAME.txt ../geneset1|sort |uniq -d |wc -l; done <name
+
+
